@@ -2,7 +2,7 @@
 
 **MPU6050-Based Motion Sensing Iron Auto Shut-off System**
 
-IronGuard-MPU is a safety and automation project aimed at reducing fire hazards and saving electricity. It uses the **MPU6050 6-axis motion sensor** to track iron movement. If no motion is detected for a preset duration, the system automatically shuts off power via a relay.
+SmartSense is a safety and automation project aimed at reducing fire hazards and saving electricity. It uses the **MPU6050 6-axis motion sensor** to track iron movement. If no motion is detected for a preset duration, the system automatically shuts off power via a relay.
 
 ---
 
