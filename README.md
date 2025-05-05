@@ -1,4 +1,4 @@
-# IronGuard-MPU 🔥📦
+# SmartSense 🔥📦
 
 **MPU6050-Based Motion Sensing Iron Auto Shut-off System**
 
