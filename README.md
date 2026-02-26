@@ -38,16 +38,15 @@ SmartSense is a safety and automation project aimed at reducing fire hazards and
 
 ## 📦 Folder Structure
 
-SmartSense/
-├── firmware/
-│ └── main.ino
-├── schematics/
-│ └── iron_auto_cutoff_circuit.pdf
-├── 3d-print/
-│ └── case_model.stl
-├── README.md
-└── LICENSE
-
+```text
+SmartSense-EN1190/
+├── cad_files/        # SolidWorks designs, STL models, and 3D printing resources
+├── pcb_files/        # Altium/KiCad schematics, board layouts, BOM, and Gerbers
+├── firmware/         # Microcontroller code (ESP32/AVR) for MPU6050 & Relay logic
+├── reports/          # Technical documentation, testing results, and milestone reports
+├── presentations/    # Pitch decks, design reviews, media, and final slides
+└── README.md         # Project overview (You are here!)
+```
 
 ---
 
@@ -63,8 +62,8 @@ SmartSense/
 
 © 2025 AuraPlus. All rights reserved.
 
-This project and all associated files are proprietary and confidential. 
-Redistribution, reproduction, or use of any part of this system without 
+This project and all associated files are proprietary and confidential.
+Redistribution, reproduction, or use of any part of this system without
 explicit written permission is strictly prohibited.
 
 Patent pending.
