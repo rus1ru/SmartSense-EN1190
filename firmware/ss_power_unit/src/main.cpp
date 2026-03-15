@@ -1,18 +1,24 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
+#include "app_state.h"
+#include "control.h"
+#include "tasks.h"
 
 void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  Serial.begin(115200);
+  Serial.println("Receiver Started");
+
+  preferences.begin("encoder", true);
+  const float savedPosition = preferences.getFloat("position", 0.0F);
+  preferences.end();
+  encoderPosition = static_cast<int>(savedPosition);
+
+  setupHardware();
+  setupWiFiESPNow();
+  setupRTOS();
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+  // All logic is handled by FreeRTOS tasks.
+  vTaskDelete(nullptr);
 }
