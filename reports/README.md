@@ -1,29 +1,33 @@
-# SmartSense Reports 📄
+# SmartSense Reports
 
-This directory is an archive of the official project reports, technical documentation, and milestone logs for the SmartSense project. These documents detail the research, problem formulation, system design, and testing protocols.
+This directory contains official written deliverables and supporting publication material.
 
----
+## Current Files
 
-## 📂 Directory Contents
+- `AuraPlus_FInal Report.pdf`
+- `Manual.pdf`
+- `Mkt_Flyer.jpeg`
 
-We recommend organizing reports chronologically or by project phase:
+## Technical Coverage
 
-- **`milestones/`**: Interim progress reports, feasibility studies, and weekly/monthly logs.
-- **`testing/`**: Test case results, user acceptance testing (UAT) reports, and QA logs.
-- **`final_report/`**: The comprehensive final project document detailing the complete build, results, and conclusions.
+Report and manual content should cover:
 
----
+- Requirements and safety constraints.
+- Mechanical and PCB design rationale.
+- Firmware architecture and communication model.
+- Motion threshold/timeout derivation and dataset references.
+- Test procedures, measured behavior, and limitations.
 
-## 📝 Document Standards
+## Notes
 
-All technical reports should adhere to the following standards:
+- `AuraPlus_FInal Report.pdf` is the primary final project document.
+- `Manual.pdf` provides operation and usage guidance.
+- `Mkt_Flyer.jpeg` is a project marketing/promotional asset.
 
-1. **Title Page:** Clear project name (SmartSense), author list, and date.
-2. **Abstract/Executive Summary:** A high-level overview of the document's purpose and findings.
-3. **Methodology:** Clear, reproducible steps explaining how designs were achieved or tests were run.
-4. **Results & Analysis:** Data-driven outcomes (e.g., latency of motion detection, relay cutoff time vs threshold).
-5. **Conclusion:** Summary of achievements vs initial objectives.
+## Suggested Additions
 
----
+- Add revisioned report appendices for future hardware or firmware iterations.
+- Store raw benchmark/test tables in a companion data file when new validation runs are completed.
 
-© 2025 AuraPlus. All rights reserved.
+Copyright (c) 2025 AuraPlus.
+All rights reserved.

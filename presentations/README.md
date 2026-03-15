@@ -1,26 +1,25 @@
-# SmartSense Presentations 📽️
+# SmartSense Presentations
 
-This directory houses the slides, pitch decks, and media used to present the SmartSense project to stakeholders, instructors, and broader audiences.
+This directory stores presentation material for the SmartSense project.
 
----
+## Current Files
 
-## 📂 Directory Contents
+- `AuraPlus_FInal Presentation.pptx`
 
-- **`pitch_decks/`**: Initial presentations focusing on the problem statement, proposed solution, and market/safety impact.
-- **`design_reviews/`**: Deep dives into the technical architecture, CAD/PCB designs, and component selection.
-- **`final_presentation/`**: The culmination deck showcasing the working prototype, testing results, and project outcomes.
-- **`media/`**: High-quality images, videos, and demo recordings of the SmartSense system in action, embedded within the presentations.
+## Technical Scope of Deck
 
----
+The final deck is expected to summarize:
 
-## 🎨 Presentation Guidelines
+- Problem statement and safety motivation.
+- System architecture (motion node, power node, communication path).
+- Firmware logic (state machine, timeout strategy, override behavior).
+- Hardware implementation snapshots (CAD and PCB).
+- Validation outcomes and demo results.
 
-When creating a new presentation for this project, please adhere to:
+## Notes
 
-- **Brand Identity:** Use the AuraPlus color scheme and consistent typography.
-- **Visuals over Text:** Embed CAD renders, schematic snapshots, and real-world demo videos instead of relying heavily on bullet points.
-- **Problem-first Approach:** Always highlight the safety hazards and energy waste of unmonitored irons before explaining the technical solution.
+- Additional slide versions can be added here if needed (for reviews, demos, or milestones).
+- If new decks are added, use phase-based naming (for example: `PDR_YYYYMMDD.pptx`, `Final_YYYYMMDD.pptx`).
 
----
-
-© 2025 AuraPlus. All rights reserved.
+Copyright (c) 2025 AuraPlus.
+All rights reserved.

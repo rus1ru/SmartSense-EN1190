@@ -1,42 +1,90 @@
-# SmartSense CAD & Hardware Design 🛠️
+# SmartSense CAD Files
 
-This directory contains the mechanical design files, 3D printing ready models, and assembly instructions for the SmartSense hardware casing. The enclosure is designed to be compact, heat-resistant, and easily integrable into existing power line systems or plugs.
+This folder contains the mechanical design assets for the SmartSense enclosure and integration.
 
----
+## Design Intent
 
-## 📂 Directory Contents
+The CAD package covers:
 
-- **`solidworks/`**: Native SolidWorks (`.SLDPRT`, `.SLDASM`) files containing the raw design. Use these if you need to modify the dimensions, adjust mount points, or remix the design.
-- **`stl/`**: Exported 3D printable `.stl` files. These are ready to be sliced and printed.
-- **`renders/`**: High-quality render images of the final assembled enclosure.
+- Plug-side enclosure geometry.
+- Encoder-side front/back housings.
+- Assembly-level fit verification.
+- Manufacturing-ready STL exports.
+- PCB-mechanical integration via STEP references.
 
----
+## Current Directory Contents
 
-## 🖨️ 3D Printing Guidelines
+### Assemblies
 
-For the best durability and safety (since the device is used near high-temperature equipment like an iron), we highly recommend the following print settings:
+SolidWorks assembly files (`.SLDASM`):
 
-- **Material:** PETG or ABS (Avoid PLA as it may warp under heat).
-- **Layer Height:** 0.2mm for a good balance of speed and structural integrity.
-- **Infill:** 20-30% Grid or Gyroid.
-- **Supports:** Required only for overhanging mounting tabs.
-- **Wall Thickness:** Minimum 3 perimeters for strength.
+- `Assembly_Back.SLDASM`
+- `Assembly_Front.SLDASM`
+- `Assembly_Full.SLDASM`
+- `Assembly_Knob.SLDASM`
 
----
+Use these to validate part mating, clearances, and overall stack-up before print/export.
 
-## 🔧 Assembly Instructions
+### Parts
 
-1. **Base Plate Preparation:** Insert the threaded brass inserts (M3) into the base plate using a soldering iron.
-2. **PCB Mounting:** Mount the SmartSense PCB onto the base standoffs. Secure it using M3 nuts.
-3. **Sensor Placement:** Ensure the MPU6050 is housed correctly in its dedicated slot without any mechanical stress to ensure accurate readings.
-4. **Relay Wiring:** Route the high-voltage relay cables through the designated strain-relief channels. Ensure all connections are isolated to prevent short circuits.
-5. **Top Cover:** Snap the top cover into place and secure it from the bottom using M3 screws.
+SolidWorks part files (`.SLDPRT`):
 
----
+- `Encoder_Back.SLDPRT`
+- `Encoder_Front.SLDPRT`
+- `Plug_back.SLDPRT`
+- `Plug_cover.SLDPRT`
+- `Plug_front.SLDPRT`
+- `Plug_In.SLDPRT`
 
-> [!WARNING]
-> **Safety First!** The enclosure houses high-voltage components. Ensure that the casing is completely sealed and printed with fire-retardant or high-heat resistant material to avoid accidental shocks or melting.
+These are the editable source models for dimensional changes, mounting updates, and tolerance adjustments.
 
----
+### Drawings
 
-© 2025 AuraPlus. All rights reserved.
+DXF exports:
+
+- `Assem2.DXF`
+- `Assem3.DXF`
+- `Assem4.DXF`
+
+DXF files are suitable for 2D review and downstream fabrication workflows that require planar profiles.
+
+### Manufacturing
+
+Printable manufacturing files (`.STL`):
+
+- `Encoder_Back.STL`
+- `Encoder_Front.STL`
+- `Plug_Back.STL`
+- `Plug_Cover.STL`
+- `Plug_Front.STL`
+
+These are triangulated meshes intended for slicing and 3D printing.
+
+### PCB Step Files
+
+PCB integration geometry (`.step`):
+
+- `encoder_lcd_pcb_5.step`
+- `power_unit_board_pcb_new.step`
+- `Power_Unit_ESP_PCB.step`
+
+STEP files are used to check board-to-enclosure fit and connector alignment in assemblies.
+
+### Sketches
+
+- `Assem3.png`
+
+### Vizualize
+
+- `Encoder.png`
+- `Plug_Unit_Front.png`
+- `Plug_Unit_Front.svpj`
+
+## Notes
+
+- Naming currently uses mixed capitalization in some files (`Plug_Back` vs `Plug_back`).
+- Keep assembly-to-part naming aligned when adding new revisions.
+- Recommended workflow: edit `.SLDPRT` -> validate in `.SLDASM` -> export updated `.STL` and `.DXF` as needed.
+
+Copyright (c) 2025 AuraPlus.
+All rights reserved.
